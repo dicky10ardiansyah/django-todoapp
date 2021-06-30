@@ -1,0 +1,7 @@
+<p>Kamu yakin tugas ini akan dihapus "{{item}}" ?</p>
+<a href="{% url 'list' %}">Tidak jadi</a>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    <input type="submit" name="Confirm">
+</form>
